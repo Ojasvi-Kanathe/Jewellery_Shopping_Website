@@ -4,8 +4,8 @@ This is a functional Jewellery Shopping Website built using Spring Boot, HTML5, 
 ## Table of Contents
 
 - [Features](#features)
-- [Technologies used](#tech-stack)
-- [Installation](#installation)
+- [Technologies used](#technologies_used)
+- [Installation](#setup_instructions)
 
 
 ## Features
