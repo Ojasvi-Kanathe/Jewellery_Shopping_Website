@@ -38,7 +38,7 @@ This is a functional Jewellery Shopping Website built using Spring Boot, HTML5, 
 
 1. *Clone the repository:*
    ```bash
-   git clone https://github.com/Rajnandini-Tasre/Clothing-Brand-Website.git
+   git clone https://github.com/Ojasvi-Kanathe/Jewellery_Shopping_Website.git
 2. *Open in Eclipse:*
   -Open Eclipse IDE.
   -Import the project using File > Import > Existing Maven Projects.
