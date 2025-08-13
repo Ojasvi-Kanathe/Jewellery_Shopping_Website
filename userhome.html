@@ -1,0 +1,88 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Shopping | User Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #222;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            flex: 1;
+        }
+
+        nav a {
+            display: block;
+            padding: 14px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Hello, <span th:text="${user.username}">User</span>!</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a th:href="@{/viewshoppinguser}">View Products</a></li>
+            <li><a th:href="@{/api/cart/mycart}">My Cart</a></li>
+            <li><a th:href="@{/logout}">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Hello, <span th:text="${user.username}">User</span>!</h2>
+        <p>Explore the best products and enjoy shopping with us.</p>
+        <img src="/Wallpaper.jpg" alt="Shopping Banner" style="max-width: 100%; margin-top: 20px;">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Online Shopping App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

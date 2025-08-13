@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .home-btn {
+            padding: 10px 20px;
+            margin-top: 30px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .home-btn:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <h1 th:text="${message}">Order has been placed!</h1>
+    <button class="home-btn" onclick="window.location.href='/viewshoppinguser'">Back to Shop</button>
+</body>
+</html>
